@@ -1,18 +1,20 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  resources :users
-
-  get 'users/new'
-  get 'users/edit'
-  get 'users/show'
-  get 'users/index'
-
+  # Routes for main pages starts here
   get 'pages/new'
   get 'pages/edit'
   get 'pages/show'
   get 'pages/index'
 
+  # Routes for users starts here
+  resources :users
+  get 'users/new'
+  get 'users/edit'
+  get 'users/show'
+  get 'users/index'
+
+  # Routes for sessions starts here
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
