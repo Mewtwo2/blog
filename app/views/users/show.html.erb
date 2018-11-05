@@ -1,2 +1,6 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<% if logged_in? && current_user.id == @user.id %>
+  <h1><%= @user.email %></h1>
+  <%= link_to 'Log Out', logout_path, method: :delete %>
+<% else %>
+  <h1>Please log in</h1>
+<% end %>
