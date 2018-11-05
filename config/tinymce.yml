@@ -1,0 +1,8 @@
+toolbar:
+  - styleselect | bold italic | undo redo
+  - image | link | code | importcss
+plugins:
+  - image
+  - link
+  - code
+  - importcss

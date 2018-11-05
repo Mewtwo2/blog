@@ -7,6 +7,12 @@ Rails.application.routes.draw do
   get 'pages/show'
   get 'pages/index'
 
+  # Routes for posts
+  resources :posts
+  get 'posts/new'
+  get 'posts/edit'
+  get 'posts/show'
+
   # Routes for users starts here
   resources :users
   get 'users/new'
