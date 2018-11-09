@@ -2,9 +2,6 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   # Routes for main pages starts here
-  get 'pages/new'
-  get 'pages/edit'
-  get 'pages/show'
   get 'pages/index'
 
   # Routes for posts
