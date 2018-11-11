@@ -7,7 +7,7 @@
 <% end %>
 
 <ul>
-<% @posts.each do |post| %>
+<% @posts.reverse.each do |post| %>
   <li><%= link_to post.title, '/posts/' + post.id.to_s %></li>
 <% end %>
 </ul>

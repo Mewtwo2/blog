@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Routes for main pages starts here
   get 'pages/index'
+  get 'pages/about'
 
   # Routes for posts
   resources :posts
