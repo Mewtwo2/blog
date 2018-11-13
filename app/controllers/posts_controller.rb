@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def new
-    redirect_to root_path if current_user && !current_user.is_admin
+    redirect_to root_path if !current_user || (current_user && !current_user.is_admin)
     @post = Post.new
   end
 
