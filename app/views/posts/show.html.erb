@@ -1,10 +1,4 @@
-<a class="button" id="back-button">&#8634; Back</a><br/><br/>
+<a href="/" class="button" id="back-button">&#8634; Back</a>
+<br/><br/>
 <h1 id="post-title"><%= @post.title %></h1>
-<article><%= @post.content.html_safe %></article>
-
-<script>
-  var backButton = document.getElementById('back-button');
-  backButton.addEventListener('click',function(){
-    history.back();
-  });
-</script>
+<article style="padding:0 25%;"><%= @post.content.html_safe %></article>

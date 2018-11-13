@@ -2,7 +2,7 @@
   <h1><%= @user.email %></h1>
   <%= link_to 'Home', root_path %>&emsp;
   <% if current_user.is_admin %>
-    <%= link_to 'Make a new post', posts_new_path , target: '_blank' %>&emsp;
+    <%= link_to 'Make a new post', posts_new_path %>&emsp;
   <% end %>
   <%= link_to 'Log Out', logout_path, method: :delete %>
 <% else %>

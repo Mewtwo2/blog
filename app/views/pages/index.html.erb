@@ -12,7 +12,8 @@
 
   <ul>
   <% @posts.reverse.each do |post| %>
-    <li><h2><%= link_to post.title, '/posts/' + post.id.to_s %></h2>Created/Updated: <%= post.updated_at.strftime('%b %d %Y %l:%M %Z') %></li><br/><hr/>
+    <li><h2><%= link_to post.title, '/posts/' + post.id.to_s %></h2>Created/Updated: <%= post.updated_at.strftime('%b %d %Y %l:%M %Z') %></li>
+    <br/><hr/>
   <% end %>
   </ul>
 </section>
