@@ -14,29 +14,50 @@
  *= require_self
  */
 
-body{
-   margin:0;
- }
-
-#navbar{
-  float:left;
-  position: fixed;
-  padding:1%;
-  height: 100vh;
-  width:12vw;
-  background-color: #1b065e;
+:root {
+  --light-pink: #f9cff2;
+  --purple: #1b065e;
+  --onyx:#37323e;
+  --silver:#bfbdc1;
 }
 
-#navbar a{
-  color:white;
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#navbar {
+  float: left;
+  position: fixed;
+  padding: 1%;
+  height: 100vh;
+  width: 13vw;
+  background-color: var(--purple);
+}
+
+#navbar a {
+  color: white;
   font-size: 150%;
   text-decoration: none;
 }
 
-#navbar a:hover{
-  color:#f9cff2;
+#navbar a:hover {
+  color: var(--light-pink);
 }
 
-main{
-  margin-left: 18vw;
+main {
+  margin-left: 16vw;
+  margin-right: 1vw;
+}
+
+.button{
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--onyx);
+  color:var(--silver) !important;
+  padding:1%;
+  border-radius: 6px;
 }

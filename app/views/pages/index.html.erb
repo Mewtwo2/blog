@@ -1,13 +1,18 @@
-<h1>Welcome to Ted's Blog</h1>
-<% if current_user %>
-<%= link_to 'Profile', '/users/' + current_user.id.to_s %>
-<% else %>
-  <%= link_to 'Sign Up', users_new_path %>&emsp;
-  <%= link_to 'Log In', login_path %>
-<% end %>
+<section id="index-section">
+  <h1 id="index-header">Welcome to Ted's Blog</h1>
+  <br/>
 
-<ul>
-<% @posts.reverse.each do |post| %>
-  <li><%= link_to post.title, '/posts/' + post.id.to_s %></li>
-<% end %>
-</ul>
+  <% if current_user %>
+    <%= link_to 'Profile', '/users/' + current_user.id.to_s, class: 'button' %>
+  <% else %>
+    <%= link_to 'Sign Up', users_new_path, class: 'button' %>&emsp;
+    <%= link_to 'Log In', login_path, class: 'button' %>
+  <% end %>
+  <br/><br/><br/>
+
+  <ul>
+  <% @posts.reverse.each do |post| %>
+    <li><h2><%= link_to post.title, '/posts/' + post.id.to_s %></h2>Created/Updated: <%= post.updated_at.strftime('%b %d %Y %l:%M %Z') %></li><br/><hr/>
+  <% end %>
+  </ul>
+</section>
