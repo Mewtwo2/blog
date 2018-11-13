@@ -1,3 +1,17 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$purple:#1b065e;
+$pink:#ff47da;
+
+#post-title{
+  color:$purple;
+  font-size: 250%;
+}
+
+#back-button{
+  float: left;
+  background-color: $pink;
+  color: $purple !important;
+  cursor: pointer;
+}

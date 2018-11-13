@@ -7,14 +7,13 @@ $silver:#bfbdc1;
 $onyx:#37323e;
 
 #index-section {
-  text-align: center;
 
   li {
     list-style-type: none;
   }
 
   li h2, a, a:visited {
-    text-decoration: none;
+    // text-decoration: none;
     color:#0a2e36;
   }
 
@@ -31,7 +30,6 @@ $onyx:#37323e;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
-  // display: inline; // This #index-header is inline because it was not aligning to center when I used the width property on it
   border-radius: 6px;
   width: 90%;
   padding: 3% 5%;
