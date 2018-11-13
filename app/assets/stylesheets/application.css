@@ -15,6 +15,7 @@
  */
 
 :root {
+  --pink:#ff47da;
   --light-pink: #f9cff2;
   --purple: #1b065e;
   --onyx:#37323e;
@@ -58,8 +59,18 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  background-color: var(--onyx);
-  color:var(--silver) !important;
+  background-color: var(--purple);
+  color:white !important;
   padding:1%;
   border-radius: 6px;
+  transition-property: font-size;
+  transition-duration: .5s;
+}
+
+.button:hover{
+  font-size: 120%;
+}
+
+p{
+  color:#37323e;
 }

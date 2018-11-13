@@ -1,4 +1,6 @@
 <a href="/" class="button" id="back-button">&#8634; Back</a>
 <br/><br/>
+<article style="padding:0 25%;">
 <h1 id="post-title"><%= @post.title %></h1>
-<article style="padding:0 25%;"><%= @post.content.html_safe %></article>
+<%= @post.content.html_safe %>
+</article>

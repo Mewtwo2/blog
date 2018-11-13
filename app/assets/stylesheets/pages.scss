@@ -6,6 +6,8 @@ $purple:#1b065e;
 $silver:#bfbdc1;
 $onyx:#37323e;
 
+// Start of pages#index code
+
 #index-section {
 
   li {
@@ -24,8 +26,8 @@ $onyx:#37323e;
 }
 
 #index-header {
-  background-color:$onyx;
-  color:$silver;
+  background-color:$purple;
+  color:white;
   font-size: 200%;
   font-weight: bold;
   text-transform: uppercase;
@@ -38,3 +40,19 @@ $onyx:#37323e;
 ul{
   padding-right:2%;
 }
+
+// End of pages#index code //
+
+// Start of pages#about code
+
+.profile-photo{
+  border: 3px solid $purple;
+  border-radius: 110px;
+}
+
+#about-header{
+  color:$purple;
+  font-size: 250%;
+}
+
+// End of pages#about code //
