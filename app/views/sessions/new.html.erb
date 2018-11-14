@@ -1,10 +1,15 @@
-<h1>Log In</h1>
+<h1 style="color:#1b065e;">Log In</h1>
 <%= form_for(:session, url: login_path) do |f| %>
   <%= f.label :email %>&emsp;
+  <br/>
   <%= f.email_field :email, placeholder: 'Email' %>
   <br/><br/>
   <%= f.label :password %>&emsp;
+  <br/>
   <%= f.password_field :password, placeholder: 'Password' %>
   <br/><br/>
-  <%= f.submit 'Log In' %>
+  <%= f.submit 'Log In', class: 'button', style: "font-family:sans-serif" %>
+  <br/><br/>
 <% end %>
+
+Don't have an account? <a href="/users/new">Sign Up</a>

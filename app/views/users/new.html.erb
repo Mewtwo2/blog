@@ -1,13 +1,19 @@
-<h1>Sign Up</h1>
+<h1 style="color:#1b065e;">Sign Up</h1>
 <%= form_for(@user) do |f| %>
   <%= f.label :email %>&emsp;
+  <br/>
   <%= f.email_field :email, placeholder: 'Email' %>
   <br/><br/>
   <%= f.label :password %>&emsp;
+  <br/>
   <%= f.password_field :password, placeholder: 'Password' %>
   <br/><br/>
   <%= f.label :password_confirmation %>&emsp;
+  <br/>
   <%= f.password_field :password_confirmationl, placeholder: 'Confirm Password' %>
   <br/><br/>
-  <%= f.submit 'Sign Up' %>
+  <%= f.submit 'Sign Up', class: "button", style: "font-family:sans-serif" %>
+  <br/><br/>
 <% end %>
+
+Already have an account? <a href="/login">Log In</a>
