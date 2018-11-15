@@ -7,7 +7,7 @@
   <% if @user.is_subscribed %>
     <%= link_to 'Unsubscribe', subscribe_path, method: :post, class: 'button' %>&emsp;
   <% else %>
-    <%= link_to 'Subscribe', root_path, class: 'button' %>&emsp;
+    <%= link_to 'Subscribe', subscribe_path, method: :post, class: 'button' %>&emsp;
   <% end %>
 
   <% if @user.is_admin %>

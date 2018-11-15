@@ -34,8 +34,17 @@ class UsersController < ApplicationController
   end
 
   def subscribe
-    # p params
-    redirect_to root_path
+    user = User.find(current_user.id)
+
+    if user.is_subscribed
+      user.is_subscribed = false
+      user.save
+    else
+      user.is_subscribed = true
+      user.save
+    end
+
+    redirect_to user
   end
 
   private
