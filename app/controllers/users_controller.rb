@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def new
     if logged_in?
       redirect_to current_user
@@ -30,6 +31,11 @@ class UsersController < ApplicationController
     else
       redirect_to root_path
     end
+  end
+
+  def subscribe
+    # p params
+    redirect_to root_path
   end
 
   private

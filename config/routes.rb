@@ -17,10 +17,12 @@ Rails.application.routes.draw do
   get 'users/edit'
   get 'users/show'
   get 'users/index'
+  post '/subscribe' => 'users#subscribe'
 
   # Routes for sessions starts here
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   delete '/logout' => 'sessions#destroy'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
