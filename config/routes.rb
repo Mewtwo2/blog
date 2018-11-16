@@ -12,11 +12,11 @@ Rails.application.routes.draw do
   get 'posts/show'
 
   # Routes for users starts here
-  resources :users
-  get 'users/new'
-  get 'users/edit'
-  get 'users/show'
-  get 'users/index'
+  # resources :users
+  # get 'users/new'
+  # get 'users/edit'
+  # get 'users/show'
+  # get 'users/index'
 
   # Routes for sessions starts here
   get '/login' => 'sessions#new'
