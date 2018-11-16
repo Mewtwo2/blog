@@ -11,7 +11,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in(@user)
-      redirect_to @user
+      redirect_to root_path
+      # redirect_to @user, these are going to be commented out unless I decide to implement user sign ups and logins
     else
       render 'new'
     end
