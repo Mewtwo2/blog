@@ -1,5 +1,12 @@
-# Blog
-This is a blog in progress, this is a project that should be finished relatively soon, estimated completion date is 11/20/2018. If you go to the website right now you will see filler content at best.
+<h1>Blog</h1>
 
-https://tedsblog.herokuapp.com/
-* This is hosted on a sleeper dyno so the website might take some time to load the first time around.
+<p>This is a blog I made that is centered around web development though I might make
+other types of posts occasionally. I am currently developing new features for this blog such as
+user accounts, email subscriptions in order to be notified of new posts and maybe
+Stripe Checkout for donations. I will only implement these features however if they add significant
+value to the blog and/or the users of the blog.</p>
+
+<a href="https://www.tedsblogspace.com/" target="_blank">Live Website</a><br><br>
+&#9673;&emsp;Technologies: Ruby on Rails, Tinymce, SASS, Heroku, Amazon S3<br>
+&#9673;&emsp;Unfinished and/or possible implementations: Stripe Checkout, Sidekiq, Redis, Resque Mailer<br>
+&#9673;&emsp;Rails version: 5.2.1
