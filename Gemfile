@@ -70,5 +70,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Include TinyMCE for rich text fields
 gem 'tinymce-rails'
 
-# Include Sidekiq for background jobs
+# Include Sidekiq for background jobs, needs Redis installed and serving to work properly, also requires sidekiq to be instantiated from terminal
 gem 'sidekiq'
