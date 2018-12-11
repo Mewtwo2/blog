@@ -11,5 +11,5 @@ end
 
 desc 'Make some console load'
 task :print_users => :environment do
-  MailerWorker.perform_async
+  Resque.enqueue(Mailer,"akkount35@gmail.com")
 end
