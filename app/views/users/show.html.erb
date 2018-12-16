@@ -1,3 +1,5 @@
+<% provide(:title, "Profile") %>
+
 <% if logged_in? && current_user.id == @user.id %>
   <h1><%= @user.email %></h1>
   <%= link_to 'Home', root_path, class: 'button' %>&emsp;
